@@ -44,52 +44,46 @@ To use this project, follow the steps below:
 ## Usage
 The main script to run the project is located in main.py. This script reads the raw data, cleans it, handles duplicates, and outputs the final dataset.
 
-Running the Project
-Prepare the dataset:
+## Running the Project
+1. Prepare the dataset:
 
 Ensure the raw data files are placed in the Raw_data folder.
 
-Run the analysis:
+2. Run the analysis:
 
 Execute the following command to start the cleaning and analysis process:
-
    ```bash
   python main.py
 ```
 3. The cleaned data will be saved in the Cleaned_data folder as output.csv.
 
-Handling Duplicates
+# Handling Duplicates
 The deduplication.py file handles the detection and removal of potential duplicate rows based on several criteria such as price, size, and location. During the execution of the main script, you will be prompted to confirm whether to display, remove, or retain duplicates.
 
-Project Workflow
+# Project Workflow
 The analysis proceeds in several stages:
 
-Data Preprocessing:
+1. Data Preprocessing:
+   * Raw data is read and cleaned (e.g., handling missing prices, sizes, etc.).
+   * Calculations for missing price per foot values are performed.
 
-Raw data is read and cleaned (e.g., handling missing prices, sizes, etc.).
+2. Duplicate Handling:
 
-Calculations for missing price per foot values are performed.
+   * Potential duplicates are identified based on key columns.
+   * Users can choose whether to display, remove, or keep the duplicates.
 
-Duplicate Handling:
+3. Data Output:
+   * The cleaned and processed data is saved into a CSV file for further analysis or reporting.
 
-Potential duplicates are identified based on key columns.
-
-Users can choose whether to display, remove, or keep the duplicates.
-
-Data Output:
-
-The cleaned and processed data is saved into a CSV file for further analysis or reporting.
-
-Statistical Analysis
+## Statistical Analysis
 The main statistical focus of the project is to understand how price per foot correlates with various factors like location, classification, and number of roads. Advanced statistical techniques such as regression analysis can be applied to identify trends and correlations.
 
-Contributing
+## Contributing
 If you would like to contribute to this project, feel free to open an issue or submit a pull request. Contributions are welcome!
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
-University of Bahrain for supporting the project.
-
-Data sources: Property Finder and Bahrain Finder.
+## Acknowledgements
+   * University of Bahrain for supporting the project.
+   * Data sources: Property Finder and Bahrain Finder.
