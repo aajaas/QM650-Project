@@ -69,7 +69,9 @@ The analysis proceeds in several stages:
 
 2. Duplicate Handling:
 
-   * Potential duplicates are identified based on key columns.
+   * Potential duplicates are identified based on key columns
+      * If the following columns match (Price, price per foot, size, location, classification, number of roasds)
+      * Exclude row where the Ad number is less then 5 ads. This is done to prevent falsue positives where the land devoloper postes identical ads for diffrent land plots at the same time
    * Users can choose whether to display, remove, or keep the duplicates.
 
 3. Data Output:
